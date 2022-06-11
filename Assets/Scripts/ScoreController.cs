@@ -9,10 +9,19 @@ public class ScoreController : MonoBehaviour
     public Text skorKanan;
 
     public ScoreManager manager;
-    // Start is called before the first frame update
+
+    public Text namaKiri;
+    public Text namaKanan;
+ 
     void Start()
     {
-        
+        namaKiri.text = "Player 1";
+        namaKanan.text = "Player 2";
+        if(PlayerNameManager.pnm.player1_name != null)
+        {
+        namaKiri.text = PlayerNameManager.pnm.player1_name;
+        }
+        namaKanan.text = PlayerNameManager.pnm.player2_name;
     }
 
     // Update is called once per frame
