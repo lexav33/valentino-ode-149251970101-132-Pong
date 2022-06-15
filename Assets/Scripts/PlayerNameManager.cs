@@ -29,7 +29,7 @@ public class PlayerNameManager : MonoBehaviour
 
     public void SetPlayerName()
     {
-        if(inputField1.text != null)
+        if(inputField1.text != " ")
         {
             player1_name = inputField1.text;
         }
@@ -38,7 +38,7 @@ public class PlayerNameManager : MonoBehaviour
             player1_name = "Player 1";
         }
         
-        if(inputField2.text != null)
+        if(inputField2.text != " ")
         {
             player2_name = inputField2.text;
         }
