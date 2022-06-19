@@ -38,4 +38,9 @@ public class ScoreManager : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }
